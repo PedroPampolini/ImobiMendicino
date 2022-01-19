@@ -1,0 +1,133 @@
+/*Configurações gerais*/
+body{
+    background-color: #1D415E;
+    color: #efecfd;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.titulo{
+    font-weight: 700;
+    color: #efecfd;
+    text-align: center;
+    padding: 10px;
+    font-size: 3em;
+}
+
+/*Estilo*/
+
+header{
+    background-color: #4297dd;
+}
+
+header img{
+    max-width: 25%;
+}
+
+header nav li{
+    background-color: #3287cd;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+header nav li:hover{
+    background-color: #62b7fd;
+}
+
+footer{
+    padding: 40px;
+    background-color: #2b608b;
+    margin-top: 100px;
+    word-wrap: break-word;
+}
+
+footer p:not(:first-of-type){
+    font-size: 1.7em;
+}
+
+footer .redesSociais{
+    margin-top: 50px;
+    text-align: center;
+}
+
+footer .redesSociais p{
+    font-weight: 700;
+    font-size: 3em;
+}
+
+footer .redesSociais a{
+    text-decoration: none;
+    font-size: 3em;
+    margin-right: 30px;
+    color: #333333;
+}
+
+footer .redesSociais a:hover{
+    color: #444444;
+}
+
+.wppLink{
+    display: none;
+}
+
+#pesquisar{
+    display: flex;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#pesquisar input{
+    border-radius: 10px 0px 0px 10px;
+    border: none;
+}
+
+#pesquisar button{
+    border-radius: 0px 10px 10px 0px;
+    border: thin solid rgba(146, 255, 201, 1);
+    background-color: rgba(146, 255, 201, 0.685);;
+}
+
+
+
+/*Alteração de tamanho de logo*/
+@media screen and (max-width:1000px){
+    header img{
+        max-width: 50%;
+    }
+}
+
+
+/*Para Celular*/
+@media screen and (max-width:780px){
+    .titulo{
+        font-size: 2em;
+    }
+
+    header nav li{
+        background-color: #4297dd;
+        margin-left: 5px;
+        border-radius: 5px;
+    }
+
+    header nav ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    header nav button{
+        float: right;
+    }
+
+    header nav .logo{
+        max-width: 60%;
+    }
+
+    .wppLink{
+        display: inline;
+    }
+
+    footer .redesSociais p{
+        font-size: 2em;
+    }
+
+}

@@ -1,0 +1,63 @@
+/*Apresentação das casas*/
+#mainImovel{
+    margin-top: 50px;
+    padding: 50px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+
+#mainImovel .carousel{
+    max-width: 80%;
+}
+
+
+/*Sobre*/
+.sobre{
+    margin-top: 100px;
+}
+.sobre .fotoPerfil img{
+    max-width: 100%;
+    border: solid thin black;
+    border-radius: 3px;
+}
+
+.sobre .fotoPerfil{
+    padding: 30px;
+    background-color: #4297dd;
+    border-radius: 10px;
+}
+
+
+.email{
+    background-color: #344861;
+    margin-top: 100px;
+    padding: 50px;
+}
+
+
+.email input{
+    margin-bottom: 20px;
+}
+
+.emailEnviar{
+    margin-top: 30px;
+    text-align: center;
+    size: 3em;
+}
+
+#emailErros i{
+    color: rgb(233, 141, 141);
+}
+
+@media screen and (max-width:780px){
+    #mainImovel{
+        padding: 0px;
+    }
+    
+    #mainImovel .carousel{
+        max-width: 100%;
+    }
+
+
+}

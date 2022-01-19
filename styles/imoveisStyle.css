@@ -1,0 +1,77 @@
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+#filtro p{
+    font-size:2em;
+    text-align:left;
+    color: #42454A;
+    font-weight: 700;
+}
+
+#filtro{
+    padding: 20px;
+    color: #42454A;
+    background-color: #aec9df;
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px black,-5px -5px 7px rgb(59, 59, 59);
+}
+
+#filtro input{
+    max-width: 100%;
+    border-radius: 7px;
+    border: thin solid #5c5c5c;
+    margin-bottom: 20px;
+    background-color:lightgoldenrodyellow;
+}
+
+#filtro select{
+    max-width: 100%;
+    border-radius: 3px;
+    border: thin solid #5c5c5c;
+    margin-bottom: 20px;
+    background-color:lightgoldenrodyellow;
+}
+
+
+#filtro .pesquisaButton{
+    display: flex;
+    justify-content:right;
+}
+
+#pesquisaButton{
+    border: thin solid #5c5c5c;
+}
+
+/*Imóveis Estilo*/
+main .mainBox{
+    background-color: #5f9dcf;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #000000, -1px -1px 10px #5c5c5c;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+main .mainBox .carousel{
+    box-shadow: 3px 3px 10px #000000, -1px -1px 10px #5c5c5c;
+}
+
+main .mainBox p{
+    margin-bottom: 30px;
+}
+
+main .mainBox .preco{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+main .mainBox .vejaMais:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+main .mainBox .codigo{
+    color: rgba(202, 202, 202, 1);
+}
