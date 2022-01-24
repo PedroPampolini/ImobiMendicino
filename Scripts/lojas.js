@@ -8,7 +8,7 @@ var imoveis_ = JSON.parse(localStorage.getItem('imoveisDB'));
 //Insere a referência dos objetos dos imóveis do tipo casa no vetor de casas
 let iCasa = 0;
 for( i = 0; i < imoveis_.length; i++){
-    if(imoveis_[i]['tipo'] == 'lote')
+    if(imoveis_[i]['tipo'] == 'loja')
     {
         casas[iCasa] = imoveis_[i];
         iCasa ++;
@@ -110,12 +110,12 @@ if (casaFiltro.length > 0)
 
                                 <div class="col-12 col-md-6">
                                     <p class="preco">R$ ${formataNumero(casaFiltro[i]['valor'])}</p>
-                                    <p class="codigo"><i class="fas fa-barcode"></i> Código: ${casaFiltro[i].id}</p>
+                                    <p class="codigo"><i class="fas fa-barcode"></i> Código: ${casaFiltro[i]['codigo']}</p>
                                     <p class="bairro"><i class="fas fa-road"></i> Bairro ${casaFiltro[i]['localizacao'][1]}</p>
-                                    <p class="quartos"><i class="fas fa-bed"></i>  ${casaFiltro[i]['quartos']} Quartos</p>
-                                    <p class="banheiros"><i class="fas fa-toilet"></i> ${casaFiltro[i]['banheiros']} Banheiros</p>
-                                    <p class="vagas"><i class="fas fa-car"></i> ${casaFiltro[i]['vagas']} Vagas de garagem</p>
-                                    <a class="btn btn-secondary vejaMais" href="imovel.html?id=${casaFiltro[i].id}" role="button">+ Veja Mais</a>
+                                    <p class="quartos"><i class="fas fa-bed"></i>  ${casaFiltro[i]['quartos']} Quarto(s)</p>
+                                    <p class="banheiros"><i class="fas fa-toilet"></i> ${casaFiltro[i]['banheiros']} Banheiro(s)</p>
+                                    <p class="vagas"><i class="fas fa-car"></i> ${casaFiltro[i]['vagas']} Vaga(s) de garagem</p>
+                                    <a class="btn btn-secondary vejaMais" href="imovel.html?id=${casaFiltro[i]['codigo']}" role="button">+ Veja Mais</a>
                                 </div>
                             </div>
                             

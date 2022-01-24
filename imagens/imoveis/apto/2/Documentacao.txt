@@ -1,0 +1,10 @@
+tipo: Apartamento
+Localização: Rua Rio Negro, 1280, bairro Grajaú, Belo Horizonte MG
+Banheiros: 2 sendo 1 suíte
+Vagas: 1
+Valor: R$470.000,00
+IPTU anual R$1.182,00
+Condomínio: 500,00
+Metragem: 130 m²
+Habite-se: sim
+Apartamento no bairro Grajaú, em Belo Horizonte/MG, com 130m², 2 amplas salas,  3 quartos com opção de colocar parede em uma das salas transformando em 4 quartos e uma excelente cozinha,  em porcelanato, lavanderia, DCE, 1 vaga de garagem, com possibilidade de 2.Valor R$470.000,00

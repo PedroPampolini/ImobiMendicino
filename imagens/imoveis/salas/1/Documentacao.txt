@@ -1,0 +1,9 @@
+tipo Sala
+Localização Avenida Sicília, 210, sala 6, bairro Bandeirantes, Belo Horizonte MG
+Banheiros 1
+Vagas 0
+Valor R$160.000,00
+IPTU anual R$1.011,00 - vou confirmar
+Condomínio 231,00
+Metragem 37,61 m²
+Descricao:Sala localizada no bairro Bandeirantes, em Belo Horizonte/MG, em shopping de 21 unidades, em  avenida com fácil estacionamento. Boa visualização do local, em frente ao ponto final do MOVE 5106, em uma praça com grande passagem de veículos e linhas de ônibus. Próxima à igreja da Pampulha (2,5km),  Mineirinho (2,8km) e Mineirão (3,5km). Área com 37,61m², piso em cerâmica. Documentação regularizada, condomínio R$231,00. Valor do imóvel: R$160.000,00

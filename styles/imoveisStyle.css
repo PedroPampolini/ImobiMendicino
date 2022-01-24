@@ -46,6 +46,25 @@ main{
     border: thin solid #5c5c5c;
 }
 
+.filtroMobile{
+    position:fixed;
+    margin: 0px;
+    left: 0px;
+    top: 20%;
+    z-index: 9999;
+    display: flex;
+    justify-content: left;
+    vertical-align: middle;
+    background-color: rgba(255, 0, 0, 0.5);
+    padding: 10px;
+    border-radius:  0px 15px 15px 0px;
+    display: none;
+}
+
+#filtroMobile{
+    /*display: none;*/
+}
+
 /*Imóveis Estilo*/
 main .mainBox{
     background-color: #5f9dcf;
@@ -74,4 +93,25 @@ main .mainBox .vejaMais:hover{
 
 main .mainBox .codigo{
     color: rgba(202, 202, 202, 1);
+}
+
+@media screen and (max-width:780px) {
+    #filtro{
+        height: 0%;
+        z-index: 9990; 
+        background-color: rgba(174, 201, 223, 0.5);
+        transition: height 0.5s;
+    }
+
+    #filtroMobile:checked ~ #filtro{
+        height: 100%;
+    }
+    
+    #filtroMobile:not(checked) ~ #filtro{
+        height: 0%;
+    }
+
+    .filtroMobile{
+        display: flex;
+    }
 }

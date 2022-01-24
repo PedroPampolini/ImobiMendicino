@@ -39,7 +39,7 @@
                                 <a class="nav-link" href="casas.html">Casas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="apartamentos.html">Apartamentos</a>
+                                <a class="nav-link" href="apartamento.html">Apartamentos</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="lotes.html">Lotes</a>
@@ -195,6 +195,12 @@
         for(i = 0; i < 3; i++)
         {
             document.querySelector('#melhoresCasas .carousel-inner').children[i].children[0].setAttribute('src',imoveisDestaque[i]);
+        }
+
+        if(location.href.includes('?id='))
+        {
+            let idUrl = location.href.split('?id=')[1].split('#')[0];
+            document.getElementById('emailTexto').value = `Olá gostaria de comprar o imóvel de código ${idUrl}`;
         }
     </script>
 </body>

@@ -3,7 +3,7 @@ let carouselImg = document.querySelector('#fotosImovel .carousel-inner');   //Se
 
 //Seleciona o imóvel na lista de imóveis existentes
 for(i = 0; i < imoveis.length; i++){
-    if (imoveis[i].id == location.href.split('?id=')[1]) {
+    if (imoveis[i]['codigo'] == location.href.split('?id=')[1]) {
         imovelAtual = imoveis[i];
         break;
     }
@@ -35,3 +35,4 @@ if (imovelAtual['habitese'] == 's'){
 else{
     document.getElementById('habitese').innerHTML += '<i class="fas fa-times-circle"></i>';
 }
+document.getElementById('comprarEmail').setAttribute('href',`index.html?id=${imovelAtual['codigo']}#enviarEmail`);

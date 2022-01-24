@@ -36,10 +36,10 @@
                                 <a class="nav-link" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="casas.html">Casas</a>
+                                <a class="nav-link" href="casas.html">Casas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="apartamento.html">Apartamentos</a>
+                                <a class="nav-link active" href="apartamento.html">Apartamentos</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="lotes.html">Lotes</a>
@@ -64,7 +64,12 @@
     <main class="main">
         <div class="container-fluid">
             <div class="row ">
-                <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <p class="filtroMobile">
+                        <input type="checkbox" id="filtroMobile">
+                        <label for="filtroMobile">Filtrar</label>
+                    </p>
+                    
                     <section id="filtro">
                         <p>Filtrar:</p>
 
@@ -119,9 +124,10 @@
                             <button id="pesquisaButton" class="btn btn-secondary">Filtrar</button>
                         </div>               
                     </section>
+                    
                 </div>
 
-                <div class="col-6 col-sm-6 col-md-8 col-lg-9">
+                <div class="col-12 col-sm-6 col-md-8 col-lg-9">
                     <div id="casasInfo">
                     <!--
                         <div class="mainBox">

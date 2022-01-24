@@ -9,10 +9,22 @@
     <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css">
     <link rel="stylesheet" href="Styles/style.css">
     <link rel="stylesheet" href="styles/imovelUnico.css">
-    <link rel="shortcut icon" href="imagens/geral/icone.png" type="image/x-icon">
     
 </head>
 <body>
+
+    <script>
+        let imoveisTemp = JSON.parse(localStorage.getItem('imoveisDB'))
+        var imovelAtual;    //Imovel com base o ID
+        //Seleciona o imóvel na lista de imóveis existentes
+        for(i = 0; i < imoveisTemp.length; i++){
+            if (imoveisTemp[i]['codigo'] == location.href.split('?id=')[1]) {
+                imovelAtual = imoveisTemp[i];
+                break;
+            }
+        }
+    </script>
+
     <header class="header">
         <div class="menuHeader">
             <nav class="navbar navbar-expand-sm navbar-dark ">
@@ -71,7 +83,10 @@
                         <div id="fotosImovel" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                               <div class="carousel-item active">
-                                <img src="imagens/imoveis/casas/1/1.jpg" class="d-block w-100" alt="...">
+                                <img id="primaFoto" src="" class="d-block w-100" alt="...">
+                                <script>
+                                    document.querySelector('#primaFoto').setAttribute('src',`${imovelAtual['fotos']}1.jpg`);
+                                </script>
                               </div>
                                                     
                             </div>
@@ -106,10 +121,10 @@
                                     <p id="vagas"><i class="fas fa-car"></i> Vagas: </p>
                                 </div>
                                 <div class="col-6">
-                                    <p id="metragem"><i class="fas fa-home"></i> Metragem: </p>
+                                    <p id="metragem"><i class="fas fa-home"></i> Área: </p>
                                 </div>
                                 <div class="col-6">
-                                    <p id="iptu"><i class="fas fa-money-check-alt"></i> IPTU: R$</p>
+                                    <p id="iptu"><i class="fas fa-money-check-alt"></i> IPTU anual: R$</p>
                                 </div>
                                 <div class="col-6">
                                     <p id="habitese"><i class="fas fa-file-invoice"></i> Habite-se: </p>
@@ -119,6 +134,15 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="comprar">
+                        <a id="comprarEmail" class="btn" href="#" role="button"><i class="far fa-envelope"></i> Interessou? Entre em contato clicando aqui</a>
+                        <a class="btn btn-primary wpplink" href="https://wa.me/5531996915436" role="button">
+                            <div class="row">
+                                <div class="col-12"><i class="fab fa-whatsapp"></i></div>
+                                <div class="col-12"><p>Interessou? Entre em contato clicando aqui</p></div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
