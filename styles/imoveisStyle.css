@@ -55,14 +55,15 @@ main{
     display: flex;
     justify-content: left;
     vertical-align: middle;
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(174, 201, 223, 0.75);
     padding: 10px;
     border-radius:  0px 15px 15px 0px;
     display: none;
+    border: thin solid rgba(0, 0, 0, 1);
 }
 
-#filtroMobile{
-    /*display: none;*/
+.filtroMobile i{
+    margin-left: 10px;
 }
 
 /*Imóveis Estilo*/
@@ -95,23 +96,24 @@ main .mainBox .codigo{
     color: rgba(202, 202, 202, 1);
 }
 
-@media screen and (max-width:780px) {
+@media screen and (max-width:767px) {
     #filtro{
-        height: 0%;
+        top: 25%;
+        display: none;
         z-index: 9990; 
-        background-color: rgba(174, 201, 223, 0.5);
-        transition: height 0.5s;
+        background-color: rgba(174, 201, 223, 0.75);
+        position: fixed;
+        transition: display 2s;
+        
     }
 
-    #filtroMobile:checked ~ #filtro{
-        height: 100%;
-    }
     
-    #filtroMobile:not(checked) ~ #filtro{
-        height: 0%;
-    }
 
     .filtroMobile{
         display: flex;
+    }
+
+    #filtroMobile{
+        display: none;
     }
 }

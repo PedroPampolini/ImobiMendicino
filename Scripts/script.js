@@ -70,3 +70,27 @@ document.getElementById('pesquisar').onsubmit = (evento) =>{
         evento.preventDefault();
     }
 }
+
+
+if(() =>{
+    let urls = ['apartamento.html','casas.html','lojas.html','lotes.html','outros.html','salas.html'];
+    for( i = 0; i < urls.length; i++)
+    {
+        if (location.href.includes(urls[i])) {
+            return true;
+        }
+    }
+}){
+    function mostraFiltro(){
+        if (document.getElementById('filtroMobile').checked) {
+          document.getElementById('filtro').style.display = 'block';
+          document.querySelector('.filtroMobile label').innerHTML = 'Filtrar<i class="fas fa-times-circle"></i>';
+        }
+        else{
+          document.getElementById('filtro').style.display = 'none';
+          document.querySelector('.filtroMobile label').innerHTML = 'Filtrar<i class="fas fa-sort-down"></i>';
+        }
+      }
+      
+      document.getElementById('filtroMobile').addEventListener('change', mostraFiltro);
+}
