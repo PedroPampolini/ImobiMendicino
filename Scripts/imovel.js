@@ -36,3 +36,4 @@ else{
     document.getElementById('habitese').innerHTML += '<i class="fas fa-times-circle"></i>';
 }
 document.getElementById('comprarEmail').setAttribute('href',`index.html?id=${imovelAtual['codigo']}#enviarEmail`);
+document.querySelector('.comprar a.wpplink').setAttribute('href',`https://wa.me/5531996915436?text=Olá!%20Gostaria%20de%20ver%20mais%20sobre%20o%20imóvel%20de%20código%20${imovelAtual['codigo']}`);
